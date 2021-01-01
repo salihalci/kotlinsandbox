@@ -1,4 +1,3 @@
-# MathGames
-Implementation math games in vue
-
+# KotlinSanbox
+Sandbox for kotlin development
 test
