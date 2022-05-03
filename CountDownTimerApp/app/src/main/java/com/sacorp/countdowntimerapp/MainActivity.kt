@@ -12,11 +12,17 @@ class MainActivity : AppCompatActivity() {
         val tvCounter:TextView =findViewById(R.id.tvTimer)
 
 
-        object : CountDownTimer(30000, 1000) {
+        object : CountDownTimer(300000, 1000) {
 
             // Callback function, fired on regular interval
             override fun onTick(millisUntilFinished: Long) {
-                tvCounter.setText("seconds remaining: " + millisUntilFinished / 1000)
+
+                val minutes = millisUntilFinished / 1000 / 60
+                val seconds = millisUntilFinished / 1000 % 60
+
+             //   tvCounter.setText("seconds remaining: " + millisUntilFinished / 1000)
+
+                tvCounter.setText("${minutes}"+":"+"${seconds}")
             }
 
             // Callback function, fired

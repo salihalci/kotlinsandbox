@@ -10,5 +10,8 @@ fun main() {
 
     print(myLong)
 
+    val x1=21
+    print("${x1>22}")
+
 }
 
