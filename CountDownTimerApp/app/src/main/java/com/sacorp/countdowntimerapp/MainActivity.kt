@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         val tvCounter:TextView =findViewById(R.id.tvTimer)
 
 
-        object : CountDownTimer(300000, 1000) {
+        object : CountDownTimer(1500000, 1000) {
 
             // Callback function, fired on regular interval
             override fun onTick(millisUntilFinished: Long) {
