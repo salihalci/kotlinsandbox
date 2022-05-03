@@ -25,13 +25,27 @@ fun main() {
 
     }
 
-    val c:Int=20
+    val c: Int = 30
 
-    when(c){
+    when (c) {
 
-        10->print("c is 10")
-        20->print("c is 20")
+        10 -> print("c is 10")
+        20 -> print("c is 20")
+        30 ->{
+
+            println("c is 20")
+            println("c is so good")
+        }
 
     }
-}
+
+    var age:Int=0;
+
+    when(age){
+        in 10..20-> print("between 10 to 20")
+        in 20..100->print("between 20 to 100")
+        else ->print("undefined.")
+    }
+
+    }
 
